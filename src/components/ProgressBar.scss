@@ -1,0 +1,33 @@
+.progressBarContainer {
+    width: 100%;
+    margin-bottom: 20px;
+    display: block;
+    justify-content: space-between;
+    .progressBarWrapper {
+        height: 15px;
+        border-radius: 100px;
+        background-color: #f3f3f3;
+        position: relative;
+        .achievedProgress {
+            max-width: 100%;
+            background-color: #1890ff;
+            height: 15px;
+            border-radius: 100px;
+            transition: all 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        }
+        .progressNum {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            line-height: 10px;
+            font-size: small;
+        }
+        .excessProgressNum {
+            color: white;
+        }
+        .excessProgress {
+            background-color: red;
+        }
+    }
+}

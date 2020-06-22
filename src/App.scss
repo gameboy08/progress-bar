@@ -1,0 +1,26 @@
+@import "./styles/breakpoints.scss";
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .container{
+    width: 90%;
+    @include tablet {
+      width: 60%;
+    }
+    .controlPanel {
+      display: block;
+      @include tablet {
+        display: flex;
+      }
+      .buttonGroupWrapper {
+        margin-top: 20px;
+        @include tablet {
+          margin-top: 0px;
+          margin-left: 20px ;
+        }
+      }
+    }
+  }
+}
